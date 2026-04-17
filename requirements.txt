@@ -278,8 +278,8 @@ pytz==2022.7.1
 pyvi==0.1.1
 pyviz_comms==3.0.4
 
-pywin32-ctypes==0.2.3
-pywinpty==2.0.13
+
+
 PyYAML==6.0.2
 pyzmq==26.2.0
 qasync==0.27.1
