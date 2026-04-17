@@ -1,232 +1,196 @@
 [
   {
     "id": "c1",
-    "name": "Advanced React",
-    "skills": [
-      "react"
-    ],
-    "difficulty": 2,
-    "duration": 22
-  },
-  {
-    "id": "c2",
-    "name": "Python Basic Bootcamp",
-    "skills": [
-      "python_basic"
-    ],
-    "difficulty": 1,
-    "duration": 19
-  },
-  {
-    "id": "c3",
-    "name": "CSS Fundamentals",
-    "skills": [
-      "css"
-    ],
-    "difficulty": 1,
-    "duration": 18
-  },
-  {
-    "id": "c4",
-    "name": "Python Advanced Practical Guide",
-    "skills": [
-      "python_advanced"
-    ],
-    "difficulty": 2,
-    "duration": 9
-  },
-  {
-    "id": "c5",
-    "name": "HTML Bootcamp",
-    "skills": [
-      "html"
-    ],
-    "difficulty": 1,
-    "duration": 21
-  },
-  {
-    "id": "c6",
-    "name": "Intro to Python Basic",
-    "skills": [
-      "python_basic"
-    ],
-    "difficulty": 1,
-    "duration": 13
-  },
-  {
-    "id": "c7",
-    "name": "Advanced SQL",
-    "skills": [
-      "sql"
-    ],
-    "difficulty": 2,
-    "duration": 12
-  },
-  {
-    "id": "c8",
-    "name": "React Fundamentals",
-    "skills": [
-      "react"
-    ],
-    "difficulty": 2,
-    "duration": 22
-  },
-  {
-    "id": "c9",
-    "name": "Python Basic for Beginners",
-    "skills": [
-      "python_basic"
-    ],
-    "difficulty": 1,
-    "duration": 14
-  },
-  {
-    "id": "c10",
-    "name": "Data Warehouse Fundamentals",
-    "skills": [
-      "data_warehouse"
-    ],
-    "difficulty": 3,
-    "duration": 16
-  },
-  {
-    "id": "c11",
-    "name": "ETL Fundamentals",
-    "skills": [
-      "etl"
-    ],
-    "difficulty": 3,
-    "duration": 14
-  },
-  {
-    "id": "c12",
-    "name": "React Practical Guide",
-    "skills": [
-      "react"
-    ],
-    "difficulty": 2,
-    "duration": 14
-  },
-  {
-    "id": "c13",
-    "name": "ETL Bootcamp",
-    "skills": [
-      "etl"
-    ],
-    "difficulty": 3,
-    "duration": 24
-  },
-  {
-    "id": "c14",
     "name": "Big Data for Beginners",
     "skills": [
       "big_data"
     ],
     "difficulty": 3,
-    "duration": 9
+    "duration": 8
   },
   {
-    "id": "c15",
-    "name": "Big Data Bootcamp",
+    "id": "c2",
+    "name": "CSS Bootcamp",
     "skills": [
-      "big_data"
+      "css"
     ],
-    "difficulty": 3,
-    "duration": 9
+    "difficulty": 1,
+    "duration": 23
   },
   {
-    "id": "c16",
-    "name": "Intro to Python Advanced",
+    "id": "c3",
+    "name": "JavaScript for Beginners",
     "skills": [
-      "python_advanced"
+      "javascript"
     ],
     "difficulty": 2,
-    "duration": 12
+    "duration": 22
   },
   {
-    "id": "c17",
+    "id": "c4",
+    "name": "Python Basic for Beginners",
+    "skills": [
+      "python_basic"
+    ],
+    "difficulty": 1,
+    "duration": 11
+  },
+  {
+    "id": "c5",
+    "name": "Intro to React",
+    "skills": [
+      "react"
+    ],
+    "difficulty": 2,
+    "duration": 15
+  },
+  {
+    "id": "c6",
+    "name": "CSS Fundamentals",
+    "skills": [
+      "css"
+    ],
+    "difficulty": 1,
+    "duration": 15
+  },
+  {
+    "id": "c7",
     "name": "API Bootcamp",
     "skills": [
       "api"
     ],
     "difficulty": 2,
+    "duration": 10
+  },
+  {
+    "id": "c8",
+    "name": "Advanced Python Advanced",
+    "skills": [
+      "python_advanced"
+    ],
+    "difficulty": 2,
+    "duration": 19
+  },
+  {
+    "id": "c9",
+    "name": "HTML Practical Guide",
+    "skills": [
+      "html"
+    ],
+    "difficulty": 1,
+    "duration": 23
+  },
+  {
+    "id": "c10",
+    "name": "Python Advanced Practical Guide",
+    "skills": [
+      "python_advanced"
+    ],
+    "difficulty": 2,
+    "duration": 20
+  },
+  {
+    "id": "c11",
+    "name": "Advanced Big Data",
+    "skills": [
+      "big_data"
+    ],
+    "difficulty": 3,
+    "duration": 10
+  },
+  {
+    "id": "c12",
+    "name": "Advanced Machine Learning",
+    "skills": [
+      "machine_learning"
+    ],
+    "difficulty": 3,
+    "duration": 23
+  },
+  {
+    "id": "c13",
+    "name": "Data Warehouse Bootcamp",
+    "skills": [
+      "data_warehouse"
+    ],
+    "difficulty": 3,
+    "duration": 14
+  },
+  {
+    "id": "c14",
+    "name": "Backend Fundamentals",
+    "skills": [
+      "backend"
+    ],
+    "difficulty": 2,
     "duration": 18
   },
   {
-    "id": "c18",
-    "name": "Data Structures Bootcamp",
-    "skills": [
-      "data_structures"
-    ],
-    "difficulty": 2,
-    "duration": 17
-  },
-  {
-    "id": "c19",
+    "id": "c15",
     "name": "Intro to API",
     "skills": [
       "api"
     ],
     "difficulty": 2,
-    "duration": 12
+    "duration": 11
   },
   {
-    "id": "c20",
-    "name": "Advanced Data Structures",
-    "skills": [
-      "data_structures"
-    ],
-    "difficulty": 2,
-    "duration": 19
-  },
-  {
-    "id": "c21",
-    "name": "Advanced HTML",
-    "skills": [
-      "html"
-    ],
-    "difficulty": 1,
-    "duration": 19
-  },
-  {
-    "id": "c22",
-    "name": "CSS Practical Guide",
-    "skills": [
-      "css"
-    ],
-    "difficulty": 1,
-    "duration": 18
-  },
-  {
-    "id": "c23",
-    "name": "Machine Learning for Beginners",
+    "id": "c16",
+    "name": "Intro to Machine Learning",
     "skills": [
       "machine_learning"
     ],
     "difficulty": 3,
-    "duration": 11
+    "duration": 16
   },
   {
-    "id": "c24",
-    "name": "Advanced Data Warehouse",
+    "id": "c17",
+    "name": "API Fundamentals",
     "skills": [
-      "data_warehouse"
+      "api"
     ],
-    "difficulty": 3,
-    "duration": 15
+    "difficulty": 2,
+    "duration": 9
   },
   {
-    "id": "c25",
-    "name": "ETL Practical Guide",
+    "id": "c18",
+    "name": "ETL Bootcamp",
     "skills": [
       "etl"
     ],
     "difficulty": 3,
-    "duration": 20
+    "duration": 18
   },
   {
-    "id": "c26",
-    "name": "Data Warehouse Bootcamp",
+    "id": "c19",
+    "name": "Backend Practical Guide",
+    "skills": [
+      "backend"
+    ],
+    "difficulty": 2,
+    "duration": 15
+  },
+  {
+    "id": "c20",
+    "name": "Python Advanced Bootcamp",
+    "skills": [
+      "python_advanced"
+    ],
+    "difficulty": 2,
+    "duration": 17
+  },
+  {
+    "id": "c21",
+    "name": "Machine Learning Fundamentals",
+    "skills": [
+      "machine_learning"
+    ],
+    "difficulty": 3,
+    "duration": 21
+  },
+  {
+    "id": "c22",
+    "name": "Advanced Data Warehouse",
     "skills": [
       "data_warehouse"
     ],
@@ -234,26 +198,53 @@
     "duration": 16
   },
   {
-    "id": "c27",
-    "name": "Intro to CSS",
-    "skills": [
-      "css"
-    ],
-    "difficulty": 1,
-    "duration": 18
-  },
-  {
-    "id": "c28",
-    "name": "SQL for Beginners",
+    "id": "c23",
+    "name": "Intro to SQL",
     "skills": [
       "sql"
     ],
     "difficulty": 2,
-    "duration": 20
+    "duration": 24
   },
   {
-    "id": "c29",
-    "name": "Intro to SQL",
+    "id": "c24",
+    "name": "HTML for Beginners",
+    "skills": [
+      "html"
+    ],
+    "difficulty": 1,
+    "duration": 8
+  },
+  {
+    "id": "c25",
+    "name": "Data Warehouse Fundamentals",
+    "skills": [
+      "data_warehouse"
+    ],
+    "difficulty": 3,
+    "duration": 14
+  },
+  {
+    "id": "c26",
+    "name": "Intro to Python Basic",
+    "skills": [
+      "python_basic"
+    ],
+    "difficulty": 1,
+    "duration": 21
+  },
+  {
+    "id": "c27",
+    "name": "Python Basic Practical Guide",
+    "skills": [
+      "python_basic"
+    ],
+    "difficulty": 1,
+    "duration": 21
+  },
+  {
+    "id": "c28",
+    "name": "SQL Fundamentals",
     "skills": [
       "sql"
     ],
@@ -261,259 +252,25 @@
     "duration": 10
   },
   {
-    "id": "c30",
-    "name": "Backend Fundamentals",
+    "id": "c29",
+    "name": "ETL Fundamentals",
     "skills": [
-      "backend"
+      "etl"
+    ],
+    "difficulty": 3,
+    "duration": 18
+  },
+  {
+    "id": "c30",
+    "name": "Data Structures Practical Guide",
+    "skills": [
+      "data_structures"
     ],
     "difficulty": 2,
-    "duration": 13
+    "duration": 18
   },
   {
     "id": "c31",
-    "name": "React for Beginners",
-    "skills": [
-      "react"
-    ],
-    "difficulty": 2,
-    "duration": 24
-  },
-  {
-    "id": "c32",
-    "name": "Big Data Fundamentals",
-    "skills": [
-      "big_data"
-    ],
-    "difficulty": 3,
-    "duration": 15
-  },
-  {
-    "id": "c33",
-    "name": "Data Structures Fundamentals",
-    "skills": [
-      "data_structures"
-    ],
-    "difficulty": 2,
-    "duration": 12
-  },
-  {
-    "id": "c34",
-    "name": "Advanced Python Advanced",
-    "skills": [
-      "python_advanced"
-    ],
-    "difficulty": 2,
-    "duration": 24
-  },
-  {
-    "id": "c35",
-    "name": "HTML Fundamentals",
-    "skills": [
-      "html"
-    ],
-    "difficulty": 1,
-    "duration": 20
-  },
-  {
-    "id": "c36",
-    "name": "Python Basic Fundamentals",
-    "skills": [
-      "python_basic"
-    ],
-    "difficulty": 1,
-    "duration": 23
-  },
-  {
-    "id": "c37",
-    "name": "JavaScript for Beginners",
-    "skills": [
-      "javascript"
-    ],
-    "difficulty": 2,
-    "duration": 25
-  },
-  {
-    "id": "c38",
-    "name": "Intro to ETL",
-    "skills": [
-      "etl"
-    ],
-    "difficulty": 3,
-    "duration": 20
-  },
-  {
-    "id": "c39",
-    "name": "Backend Practical Guide",
-    "skills": [
-      "backend"
-    ],
-    "difficulty": 2,
-    "duration": 23
-  },
-  {
-    "id": "c40",
-    "name": "Advanced JavaScript",
-    "skills": [
-      "javascript"
-    ],
-    "difficulty": 2,
-    "duration": 18
-  },
-  {
-    "id": "c41",
-    "name": "Python Advanced for Beginners",
-    "skills": [
-      "python_advanced"
-    ],
-    "difficulty": 2,
-    "duration": 23
-  },
-  {
-    "id": "c42",
-    "name": "Backend Bootcamp",
-    "skills": [
-      "backend"
-    ],
-    "difficulty": 2,
-    "duration": 20
-  },
-  {
-    "id": "c43",
-    "name": "Advanced Backend",
-    "skills": [
-      "backend"
-    ],
-    "difficulty": 2,
-    "duration": 11
-  },
-  {
-    "id": "c44",
-    "name": "ETL for Beginners",
-    "skills": [
-      "etl"
-    ],
-    "difficulty": 3,
-    "duration": 12
-  },
-  {
-    "id": "c45",
-    "name": "JavaScript Bootcamp",
-    "skills": [
-      "javascript"
-    ],
-    "difficulty": 2,
-    "duration": 15
-  },
-  {
-    "id": "c46",
-    "name": "Advanced Python Basic",
-    "skills": [
-      "python_basic"
-    ],
-    "difficulty": 1,
-    "duration": 17
-  },
-  {
-    "id": "c47",
-    "name": "Intro to Big Data",
-    "skills": [
-      "big_data"
-    ],
-    "difficulty": 3,
-    "duration": 18
-  },
-  {
-    "id": "c48",
-    "name": "Intro to JavaScript",
-    "skills": [
-      "javascript"
-    ],
-    "difficulty": 2,
-    "duration": 25
-  },
-  {
-    "id": "c49",
-    "name": "Python Basic Practical Guide",
-    "skills": [
-      "python_basic"
-    ],
-    "difficulty": 1,
-    "duration": 20
-  },
-  {
-    "id": "c50",
-    "name": "Data Structures for Beginners",
-    "skills": [
-      "data_structures"
-    ],
-    "difficulty": 2,
-    "duration": 13
-  },
-  {
-    "id": "c51",
-    "name": "Advanced API",
-    "skills": [
-      "api"
-    ],
-    "difficulty": 2,
-    "duration": 21
-  },
-  {
-    "id": "c52",
-    "name": "React Bootcamp",
-    "skills": [
-      "react"
-    ],
-    "difficulty": 2,
-    "duration": 18
-  },
-  {
-    "id": "c53",
-    "name": "HTML Practical Guide",
-    "skills": [
-      "html"
-    ],
-    "difficulty": 1,
-    "duration": 20
-  },
-  {
-    "id": "c54",
-    "name": "Python Advanced Bootcamp",
-    "skills": [
-      "python_advanced"
-    ],
-    "difficulty": 2,
-    "duration": 9
-  },
-  {
-    "id": "c55",
-    "name": "Machine Learning Practical Guide",
-    "skills": [
-      "machine_learning"
-    ],
-    "difficulty": 3,
-    "duration": 13
-  },
-  {
-    "id": "c56",
-    "name": "Advanced Machine Learning",
-    "skills": [
-      "machine_learning"
-    ],
-    "difficulty": 3,
-    "duration": 9
-  },
-  {
-    "id": "c57",
-    "name": "Machine Learning Bootcamp",
-    "skills": [
-      "machine_learning"
-    ],
-    "difficulty": 3,
-    "duration": 25
-  },
-  {
-    "id": "c58",
     "name": "Big Data Practical Guide",
     "skills": [
       "big_data"
@@ -522,21 +279,264 @@
     "duration": 14
   },
   {
-    "id": "c59",
-    "name": "API for Beginners",
+    "id": "c32",
+    "name": "Data Warehouse Practical Guide",
+    "skills": [
+      "data_warehouse"
+    ],
+    "difficulty": 3,
+    "duration": 25
+  },
+  {
+    "id": "c33",
+    "name": "React Fundamentals",
+    "skills": [
+      "react"
+    ],
+    "difficulty": 2,
+    "duration": 13
+  },
+  {
+    "id": "c34",
+    "name": "Advanced HTML",
+    "skills": [
+      "html"
+    ],
+    "difficulty": 1,
+    "duration": 21
+  },
+  {
+    "id": "c35",
+    "name": "Advanced Backend",
+    "skills": [
+      "backend"
+    ],
+    "difficulty": 2,
+    "duration": 12
+  },
+  {
+    "id": "c36",
+    "name": "Advanced API",
     "skills": [
       "api"
     ],
     "difficulty": 2,
+    "duration": 13
+  },
+  {
+    "id": "c37",
+    "name": "Python Basic Bootcamp",
+    "skills": [
+      "python_basic"
+    ],
+    "difficulty": 1,
+    "duration": 18
+  },
+  {
+    "id": "c38",
+    "name": "Advanced ETL",
+    "skills": [
+      "etl"
+    ],
+    "difficulty": 3,
+    "duration": 21
+  },
+  {
+    "id": "c39",
+    "name": "API Practical Guide",
+    "skills": [
+      "api"
+    ],
+    "difficulty": 2,
+    "duration": 22
+  },
+  {
+    "id": "c40",
+    "name": "CSS Practical Guide",
+    "skills": [
+      "css"
+    ],
+    "difficulty": 1,
+    "duration": 16
+  },
+  {
+    "id": "c41",
+    "name": "React Bootcamp",
+    "skills": [
+      "react"
+    ],
+    "difficulty": 2,
+    "duration": 22
+  },
+  {
+    "id": "c42",
+    "name": "Advanced CSS",
+    "skills": [
+      "css"
+    ],
+    "difficulty": 1,
+    "duration": 10
+  },
+  {
+    "id": "c43",
+    "name": "Backend for Beginners",
+    "skills": [
+      "backend"
+    ],
+    "difficulty": 2,
+    "duration": 20
+  },
+  {
+    "id": "c44",
+    "name": "Data Structures Bootcamp",
+    "skills": [
+      "data_structures"
+    ],
+    "difficulty": 2,
+    "duration": 23
+  },
+  {
+    "id": "c45",
+    "name": "HTML Fundamentals",
+    "skills": [
+      "html"
+    ],
+    "difficulty": 1,
+    "duration": 15
+  },
+  {
+    "id": "c46",
+    "name": "Advanced JavaScript",
+    "skills": [
+      "javascript"
+    ],
+    "difficulty": 2,
+    "duration": 17
+  },
+  {
+    "id": "c47",
+    "name": "ETL Practical Guide",
+    "skills": [
+      "etl"
+    ],
+    "difficulty": 3,
+    "duration": 8
+  },
+  {
+    "id": "c48",
+    "name": "JavaScript Practical Guide",
+    "skills": [
+      "javascript"
+    ],
+    "difficulty": 2,
+    "duration": 19
+  },
+  {
+    "id": "c49",
+    "name": "Intro to HTML",
+    "skills": [
+      "html"
+    ],
+    "difficulty": 1,
+    "duration": 10
+  },
+  {
+    "id": "c50",
+    "name": "Intro to Big Data",
+    "skills": [
+      "big_data"
+    ],
+    "difficulty": 3,
+    "duration": 12
+  },
+  {
+    "id": "c51",
+    "name": "Machine Learning for Beginners",
+    "skills": [
+      "machine_learning"
+    ],
+    "difficulty": 3,
+    "duration": 19
+  },
+  {
+    "id": "c52",
+    "name": "Advanced Data Structures",
+    "skills": [
+      "data_structures"
+    ],
+    "difficulty": 2,
+    "duration": 21
+  },
+  {
+    "id": "c53",
+    "name": "JavaScript Fundamentals",
+    "skills": [
+      "javascript"
+    ],
+    "difficulty": 2,
+    "duration": 9
+  },
+  {
+    "id": "c54",
+    "name": "Big Data Bootcamp",
+    "skills": [
+      "big_data"
+    ],
+    "difficulty": 3,
+    "duration": 20
+  },
+  {
+    "id": "c55",
+    "name": "JavaScript Bootcamp",
+    "skills": [
+      "javascript"
+    ],
+    "difficulty": 2,
+    "duration": 8
+  },
+  {
+    "id": "c56",
+    "name": "Data Structures Fundamentals",
+    "skills": [
+      "data_structures"
+    ],
+    "difficulty": 2,
+    "duration": 22
+  },
+  {
+    "id": "c57",
+    "name": "Python Advanced for Beginners",
+    "skills": [
+      "python_advanced"
+    ],
+    "difficulty": 2,
+    "duration": 9
+  },
+  {
+    "id": "c58",
+    "name": "SQL for Beginners",
+    "skills": [
+      "sql"
+    ],
+    "difficulty": 2,
+    "duration": 14
+  },
+  {
+    "id": "c59",
+    "name": "Intro to ETL",
+    "skills": [
+      "etl"
+    ],
+    "difficulty": 3,
     "duration": 10
   },
   {
     "id": "c60",
-    "name": "API Fundamentals",
+    "name": "SQL Practical Guide",
     "skills": [
-      "api"
+      "sql"
     ],
     "difficulty": 2,
-    "duration": 12
+    "duration": 16
   }
 ]

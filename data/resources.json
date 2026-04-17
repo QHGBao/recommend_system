@@ -1,170 +1,170 @@
 [
   {
     "id": "r1",
-    "title": "CSS Tricks Guide",
-    "type": "MOOC",
-    "url": "https://css-tricks.com/",
-    "course_id": "c22"
-  },
-  {
-    "id": "r2",
-    "title": "Python for Everybody",
-    "type": "MOOC",
-    "url": "https://www.coursera.org/specializations/python",
-    "course_id": "c2"
-  },
-  {
-    "id": "r3",
-    "title": "React Official Docs",
-    "type": "Book",
-    "url": "https://react.dev/learn",
-    "course_id": "c1"
-  },
-  {
-    "id": "r4",
-    "title": "NodeJS Learn",
-    "type": "MOOC",
-    "url": "https://nodejs.dev/en/learn/",
-    "course_id": "c39"
-  },
-  {
-    "id": "r5",
-    "title": "SQLBolt Interactive Tutorial",
-    "type": "Book",
-    "url": "https://sqlbolt.com/",
-    "course_id": "c28"
-  },
-  {
-    "id": "r6",
-    "title": "NodeJS Learn",
-    "type": "Book",
-    "url": "https://nodejs.dev/en/learn/",
-    "course_id": "c39"
-  },
-  {
-    "id": "r7",
-    "title": "Effective Python Book",
-    "type": "Book",
-    "url": "https://effectivepython.com/",
-    "course_id": "c54"
-  },
-  {
-    "id": "r8",
-    "title": "freeCodeCamp HTML Course",
+    "title": "MDN HTML",
     "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c35"
-  },
-  {
-    "id": "r9",
-    "title": "Python Advanced Topics",
-    "type": "Video",
-    "url": "https://www.datacamp.com/courses/intermediate-python",
-    "course_id": "c34"
-  },
-  {
-    "id": "r10",
-    "title": "Data Engineering Foundations",
-    "type": "Book",
-    "url": "https://www.coursera.org/learn/data-engineering-foundations",
-    "course_id": "c44"
-  },
-  {
-    "id": "r11",
-    "title": "React freeCodeCamp",
-    "type": "Book",
-    "url": "https://www.freecodecamp.org/news/learn-react-course/",
-    "course_id": "c8"
-  },
-  {
-    "id": "r12",
-    "title": "freeCodeCamp HTML Course",
-    "type": "MOOC",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c5"
-  },
-  {
-    "id": "r13",
-    "title": "MDN JavaScript Guide",
-    "type": "Video",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "course_id": "c37"
-  },
-  {
-    "id": "r14",
-    "title": "Apache Spark Documentation",
-    "type": "Book",
-    "url": "https://spark.apache.org/docs/latest/",
-    "course_id": "c47"
-  },
-  {
-    "id": "r15",
-    "title": "JavaScript Info",
-    "type": "Video",
-    "url": "https://javascript.info/",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
     "course_id": "c45"
   },
   {
-    "id": "r16",
-    "title": "Apache Spark Documentation",
+    "id": "r2",
+    "title": "NodeJS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+    "course_id": "c43"
+  },
+  {
+    "id": "r3",
+    "title": "Scrimba React",
     "type": "MOOC",
-    "url": "https://spark.apache.org/docs/latest/",
-    "course_id": "c58"
+    "url": "https://scrimba.com/learn/learnreact",
+    "course_id": "c33"
+  },
+  {
+    "id": "r4",
+    "title": "W3Schools SQL",
+    "type": "Article",
+    "url": "https://www.w3schools.com/sql/",
+    "course_id": "c28"
+  },
+  {
+    "id": "r5",
+    "title": "freeCodeCamp Python Course",
+    "type": "Video",
+    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+    "course_id": "c27"
+  },
+  {
+    "id": "r6",
+    "title": "CSS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+    "course_id": "c42"
+  },
+  {
+    "id": "r7",
+    "title": "Big Data Coursera",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/specializations/big-data",
+    "course_id": "c11"
+  },
+  {
+    "id": "r8",
+    "title": "Google ML Crash Course",
+    "type": "Article",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "course_id": "c16"
+  },
+  {
+    "id": "r9",
+    "title": "ETL Concepts",
+    "type": "Article",
+    "url": "https://www.ibm.com/topics/etl",
+    "course_id": "c59"
+  },
+  {
+    "id": "r10",
+    "title": "Backend Coursera",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/",
+    "course_id": "c43"
+  },
+  {
+    "id": "r11",
+    "title": "You Don\u2019t Know JS",
+    "type": "Book",
+    "url": "https://github.com/getify/You-Dont-Know-JS",
+    "course_id": "c53"
+  },
+  {
+    "id": "r12",
+    "title": "Advanced Python (DataCamp)",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/intermediate-python",
+    "course_id": "c10"
+  },
+  {
+    "id": "r13",
+    "title": "HTML & CSS Book",
+    "type": "Book",
+    "url": "https://www.htmlandcssbook.com/",
+    "course_id": "c24"
+  },
+  {
+    "id": "r14",
+    "title": "Advanced Python (DataCamp)",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/intermediate-python",
+    "course_id": "c8"
+  },
+  {
+    "id": "r15",
+    "title": "Designing Web APIs",
+    "type": "Book",
+    "url": "https://www.oreilly.com/library/view/designing-web-apis/9781492026914/",
+    "course_id": "c43"
+  },
+  {
+    "id": "r16",
+    "title": "API Design Patterns",
+    "type": "Book",
+    "url": "https://www.manning.com/books/api-design-patterns",
+    "course_id": "c17"
   },
   {
     "id": "r17",
-    "title": "Scrimba React Course",
-    "type": "Video",
-    "url": "https://scrimba.com/learn/learnreact",
-    "course_id": "c52"
+    "title": "Fullstack React Book",
+    "type": "Book",
+    "url": "https://www.fullstackreact.com/",
+    "course_id": "c5"
   },
   {
     "id": "r18",
-    "title": "Introduction to Data Engineering",
+    "title": "MDN CSS",
     "type": "Article",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c38"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "course_id": "c6"
   },
   {
     "id": "r19",
-    "title": "Big Data Specialization",
+    "title": "Corey Schafer Python",
     "type": "Video",
-    "url": "https://www.coursera.org/specializations/big-data",
-    "course_id": "c47"
+    "url": "https://www.youtube.com/@coreyms",
+    "course_id": "c10"
   },
   {
     "id": "r20",
-    "title": "Python for Everybody",
-    "type": "Book",
-    "url": "https://www.coursera.org/specializations/python",
-    "course_id": "c36"
+    "title": "ETL Concepts",
+    "type": "Article",
+    "url": "https://www.ibm.com/topics/etl",
+    "course_id": "c59"
   },
   {
     "id": "r21",
-    "title": "Big Data Specialization",
-    "type": "Article",
-    "url": "https://www.coursera.org/specializations/big-data",
-    "course_id": "c32"
+    "title": "Hands-On ML",
+    "type": "Book",
+    "url": "https://github.com/ageron/handson-ml2",
+    "course_id": "c16"
   },
   {
     "id": "r22",
-    "title": "Effective Python Book",
-    "type": "Book",
-    "url": "https://effectivepython.com/",
-    "course_id": "c54"
+    "title": "HTML Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+    "course_id": "c24"
   },
   {
     "id": "r23",
-    "title": "Kaggle ML Course",
+    "title": "JS Crash Course",
     "type": "Video",
-    "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
-    "course_id": "c23"
+    "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+    "course_id": "c55"
   },
   {
     "id": "r24",
-    "title": "freeCodeCamp HTML Course",
+    "title": "NodeJS Docs",
     "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+    "url": "https://nodejs.dev/en/learn/",
     "course_id": "c35"
   },
   {
@@ -172,671 +172,671 @@
     "title": "Google ML Crash Course",
     "type": "Article",
     "url": "https://developers.google.com/machine-learning/crash-course",
-    "course_id": "c57"
+    "course_id": "c12"
   },
   {
     "id": "r26",
-    "title": "Postman API Fundamentals",
+    "title": "Andrew Ng ML",
     "type": "MOOC",
-    "url": "https://learning.postman.com/",
-    "course_id": "c59"
+    "url": "https://www.coursera.org/learn/machine-learning",
+    "course_id": "c12"
   },
   {
     "id": "r27",
-    "title": "Postman API Fundamentals",
-    "type": "Article",
-    "url": "https://learning.postman.com/",
-    "course_id": "c19"
+    "title": "Automate the Boring Stuff",
+    "type": "Book",
+    "url": "https://automatetheboringstuff.com/",
+    "course_id": "c27"
   },
   {
     "id": "r28",
-    "title": "MDN JavaScript Guide",
-    "type": "Book",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "course_id": "c45"
+    "title": "MDN CSS",
+    "type": "Article",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "course_id": "c2"
   },
   {
     "id": "r29",
-    "title": "Introduction to Data Engineering",
-    "type": "MOOC",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c13"
+    "title": "JavaScript Info",
+    "type": "Article",
+    "url": "https://javascript.info/",
+    "course_id": "c46"
   },
   {
     "id": "r30",
-    "title": "NodeJS Learn",
-    "type": "MOOC",
-    "url": "https://nodejs.dev/en/learn/",
-    "course_id": "c30"
+    "title": "REST API Tutorial Video",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+    "course_id": "c17"
   },
   {
     "id": "r31",
-    "title": "freeCodeCamp JavaScript",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
-    "course_id": "c45"
+    "title": "Designing Data-Intensive Apps",
+    "type": "Book",
+    "url": "https://dataintensive.net/",
+    "course_id": "c29"
   },
   {
     "id": "r32",
-    "title": "Scrimba React Course",
-    "type": "Article",
-    "url": "https://scrimba.com/learn/learnreact",
+    "title": "Advanced Python (DataCamp)",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/intermediate-python",
     "course_id": "c8"
   },
   {
     "id": "r33",
-    "title": "LearnPython.org",
-    "type": "Book",
-    "url": "https://www.learnpython.org/",
-    "course_id": "c2"
+    "title": "Google ML Crash Course",
+    "type": "Article",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "course_id": "c12"
   },
   {
     "id": "r34",
-    "title": "Mode SQL Tutorial",
-    "type": "Book",
-    "url": "https://mode.com/sql-tutorial/",
-    "course_id": "c29"
+    "title": "Andrew Ng ML",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/learn/machine-learning",
+    "course_id": "c12"
   },
   {
     "id": "r35",
-    "title": "Big Data Specialization",
-    "type": "Book",
-    "url": "https://www.coursera.org/specializations/big-data",
-    "course_id": "c15"
+    "title": "REST API Guide",
+    "type": "Article",
+    "url": "https://restfulapi.net/",
+    "course_id": "c7"
   },
   {
     "id": "r36",
-    "title": "React Official Docs",
-    "type": "Article",
-    "url": "https://react.dev/learn",
-    "course_id": "c1"
+    "title": "freeCodeCamp JS",
+    "type": "MOOC",
+    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "course_id": "c55"
   },
   {
     "id": "r37",
-    "title": "CSS Tricks Guide",
-    "type": "Video",
-    "url": "https://css-tricks.com/",
-    "course_id": "c22"
+    "title": "Advanced Python (DataCamp)",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/intermediate-python",
+    "course_id": "c8"
   },
   {
     "id": "r38",
-    "title": "Postman API Fundamentals",
+    "title": "NodeJS Crash Course",
     "type": "Video",
-    "url": "https://learning.postman.com/",
-    "course_id": "c51"
+    "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+    "course_id": "c19"
   },
   {
     "id": "r39",
-    "title": "freeCodeCamp HTML Course",
+    "title": "REST API Tutorial Video",
     "type": "Video",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c53"
+    "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+    "course_id": "c39"
   },
   {
     "id": "r40",
-    "title": "Python for Everybody",
-    "type": "MOOC",
-    "url": "https://www.coursera.org/specializations/python",
+    "title": "JS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
     "course_id": "c46"
   },
   {
     "id": "r41",
-    "title": "freeCodeCamp Python Course",
-    "type": "Book",
-    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
-    "course_id": "c9"
-  },
-  {
-    "id": "r42",
-    "title": "Google ML Crash Course",
-    "type": "Book",
-    "url": "https://developers.google.com/machine-learning/crash-course",
-    "course_id": "c23"
-  },
-  {
-    "id": "r43",
-    "title": "Postman API Fundamentals",
-    "type": "Video",
-    "url": "https://learning.postman.com/",
-    "course_id": "c17"
-  },
-  {
-    "id": "r44",
-    "title": "freeCodeCamp HTML Course",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c35"
-  },
-  {
-    "id": "r45",
-    "title": "Advanced Python Programming",
-    "type": "Video",
-    "url": "https://realpython.com/",
-    "course_id": "c41"
-  },
-  {
-    "id": "r46",
-    "title": "Introduction to Data Engineering",
+    "title": "Andrew Ng ML",
     "type": "MOOC",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c25"
-  },
-  {
-    "id": "r47",
-    "title": "Postman API Fundamentals",
-    "type": "Video",
-    "url": "https://learning.postman.com/",
-    "course_id": "c60"
-  },
-  {
-    "id": "r48",
-    "title": "freeCodeCamp Python Course",
-    "type": "Video",
-    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
-    "course_id": "c46"
-  },
-  {
-    "id": "r49",
-    "title": "React freeCodeCamp",
-    "type": "MOOC",
-    "url": "https://www.freecodecamp.org/news/learn-react-course/",
-    "course_id": "c52"
-  },
-  {
-    "id": "r50",
-    "title": "Apache Spark Documentation",
-    "type": "MOOC",
-    "url": "https://spark.apache.org/docs/latest/",
-    "course_id": "c32"
-  },
-  {
-    "id": "r51",
-    "title": "freeCodeCamp JavaScript",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
-    "course_id": "c48"
-  },
-  {
-    "id": "r52",
-    "title": "MDN HTML Guide",
-    "type": "Book",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    "course_id": "c5"
-  },
-  {
-    "id": "r53",
-    "title": "Python Advanced Topics",
-    "type": "MOOC",
-    "url": "https://www.datacamp.com/courses/intermediate-python",
-    "course_id": "c54"
-  },
-  {
-    "id": "r54",
-    "title": "Postman API Fundamentals",
-    "type": "Book",
-    "url": "https://learning.postman.com/",
-    "course_id": "c60"
-  },
-  {
-    "id": "r55",
-    "title": "Postman API Fundamentals",
-    "type": "Video",
-    "url": "https://learning.postman.com/",
-    "course_id": "c19"
-  },
-  {
-    "id": "r56",
-    "title": "Introduction to Data Engineering",
-    "type": "Video",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c44"
-  },
-  {
-    "id": "r57",
-    "title": "CSS Tutorial",
-    "type": "Video",
-    "url": "https://www.w3schools.com/css/",
-    "course_id": "c3"
-  },
-  {
-    "id": "r58",
-    "title": "freeCodeCamp HTML Course",
-    "type": "MOOC",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c5"
-  },
-  {
-    "id": "r59",
-    "title": "Introduction to Data Engineering",
-    "type": "MOOC",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c13"
-  },
-  {
-    "id": "r60",
-    "title": "Mode SQL Tutorial",
-    "type": "Book",
-    "url": "https://mode.com/sql-tutorial/",
-    "course_id": "c28"
-  },
-  {
-    "id": "r61",
-    "title": "Introduction to Data Engineering",
-    "type": "Video",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c44"
-  },
-  {
-    "id": "r62",
-    "title": "React Official Docs",
-    "type": "Video",
-    "url": "https://react.dev/learn",
-    "course_id": "c31"
-  },
-  {
-    "id": "r63",
-    "title": "REST API Tutorial",
-    "type": "Video",
-    "url": "https://restfulapi.net/",
-    "course_id": "c59"
-  },
-  {
-    "id": "r64",
-    "title": "freeCodeCamp HTML Course",
-    "type": "Book",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c21"
-  },
-  {
-    "id": "r65",
-    "title": "FastAPI Tutorial",
-    "type": "Video",
-    "url": "https://fastapi.tiangolo.com/tutorial/",
-    "course_id": "c43"
-  },
-  {
-    "id": "r66",
-    "title": "CSS Tutorial",
-    "type": "Book",
-    "url": "https://www.w3schools.com/css/",
-    "course_id": "c27"
-  },
-  {
-    "id": "r67",
-    "title": "FastAPI Tutorial",
-    "type": "Book",
-    "url": "https://fastapi.tiangolo.com/tutorial/",
-    "course_id": "c30"
-  },
-  {
-    "id": "r68",
-    "title": "Advanced Python Programming",
-    "type": "Book",
-    "url": "https://realpython.com/",
-    "course_id": "c34"
-  },
-  {
-    "id": "r69",
-    "title": "Advanced Python Programming",
-    "type": "MOOC",
-    "url": "https://realpython.com/",
-    "course_id": "c34"
-  },
-  {
-    "id": "r70",
-    "title": "REST API Tutorial",
-    "type": "Article",
-    "url": "https://restfulapi.net/",
-    "course_id": "c59"
-  },
-  {
-    "id": "r71",
-    "title": "freeCodeCamp Python Course",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
-    "course_id": "c49"
-  },
-  {
-    "id": "r72",
-    "title": "freeCodeCamp HTML Course",
-    "type": "Book",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c21"
-  },
-  {
-    "id": "r73",
-    "title": "LearnPython.org",
-    "type": "MOOC",
-    "url": "https://www.learnpython.org/",
-    "course_id": "c49"
-  },
-  {
-    "id": "r74",
-    "title": "MDN CSS Guide",
-    "type": "Article",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    "course_id": "c3"
-  },
-  {
-    "id": "r75",
-    "title": "Postman API Fundamentals",
-    "type": "Article",
-    "url": "https://learning.postman.com/",
-    "course_id": "c17"
-  },
-  {
-    "id": "r76",
-    "title": "JavaScript Info",
-    "type": "Article",
-    "url": "https://javascript.info/",
-    "course_id": "c45"
-  },
-  {
-    "id": "r77",
-    "title": "LearnPython.org",
-    "type": "MOOC",
-    "url": "https://www.learnpython.org/",
-    "course_id": "c6"
-  },
-  {
-    "id": "r78",
-    "title": "JavaScript Info",
-    "type": "MOOC",
-    "url": "https://javascript.info/",
-    "course_id": "c45"
-  },
-  {
-    "id": "r79",
-    "title": "Introduction to Data Engineering",
-    "type": "MOOC",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c44"
-  },
-  {
-    "id": "r80",
-    "title": "freeCodeCamp Python Course",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
-    "course_id": "c9"
-  },
-  {
-    "id": "r81",
-    "title": "SQL Tutorial W3Schools",
-    "type": "Video",
-    "url": "https://www.w3schools.com/sql/",
-    "course_id": "c29"
-  },
-  {
-    "id": "r82",
-    "title": "HTML Tutorial",
-    "type": "MOOC",
-    "url": "https://www.w3schools.com/html/",
-    "course_id": "c5"
-  },
-  {
-    "id": "r83",
-    "title": "REST API Tutorial",
-    "type": "Book",
-    "url": "https://restfulapi.net/",
-    "course_id": "c19"
-  },
-  {
-    "id": "r84",
-    "title": "FastAPI Tutorial",
-    "type": "Video",
-    "url": "https://fastapi.tiangolo.com/tutorial/",
-    "course_id": "c39"
-  },
-  {
-    "id": "r85",
-    "title": "Postman API Fundamentals",
-    "type": "Article",
-    "url": "https://learning.postman.com/",
-    "course_id": "c51"
-  },
-  {
-    "id": "r86",
-    "title": "Scrimba React Course",
-    "type": "Article",
-    "url": "https://scrimba.com/learn/learnreact",
-    "course_id": "c52"
-  },
-  {
-    "id": "r87",
-    "title": "Scrimba React Course",
-    "type": "MOOC",
-    "url": "https://scrimba.com/learn/learnreact",
-    "course_id": "c8"
-  },
-  {
-    "id": "r88",
-    "title": "Data Engineering Foundations",
-    "type": "Book",
-    "url": "https://www.coursera.org/learn/data-engineering-foundations",
-    "course_id": "c13"
-  },
-  {
-    "id": "r89",
-    "title": "HTML Tutorial",
-    "type": "Book",
-    "url": "https://www.w3schools.com/html/",
-    "course_id": "c21"
-  },
-  {
-    "id": "r90",
-    "title": "freeCodeCamp Python Course",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
-    "course_id": "c46"
-  },
-  {
-    "id": "r91",
-    "title": "Effective Python Book",
-    "type": "Book",
-    "url": "https://effectivepython.com/",
+    "url": "https://www.coursera.org/learn/machine-learning",
     "course_id": "c16"
   },
   {
-    "id": "r92",
-    "title": "Introduction to Data Engineering",
-    "type": "Article",
-    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
-    "course_id": "c11"
+    "id": "r42",
+    "title": "Corey Schafer Python",
+    "type": "Video",
+    "url": "https://www.youtube.com/@coreyms",
+    "course_id": "c57"
   },
   {
-    "id": "r93",
-    "title": "Mode SQL Tutorial",
-    "type": "Article",
-    "url": "https://mode.com/sql-tutorial/",
+    "id": "r43",
+    "title": "Data Engineering YouTube",
+    "type": "Video",
+    "url": "https://www.youtube.com/@DataEngineering",
+    "course_id": "c38"
+  },
+  {
+    "id": "r44",
+    "title": "Data Engineering Intro",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
+    "course_id": "c47"
+  },
+  {
+    "id": "r45",
+    "title": "SQL Cookbook",
+    "type": "Book",
+    "url": "https://www.oreilly.com/library/view/sql-cookbook/0596009763/",
     "course_id": "c28"
   },
   {
-    "id": "r94",
-    "title": "freeCodeCamp JavaScript",
+    "id": "r46",
+    "title": "Scrimba React",
+    "type": "MOOC",
+    "url": "https://scrimba.com/learn/learnreact",
+    "course_id": "c33"
+  },
+  {
+    "id": "r47",
+    "title": "JS Crash Course",
     "type": "Video",
+    "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+    "course_id": "c46"
+  },
+  {
+    "id": "r48",
+    "title": "HTML & CSS Book",
+    "type": "Book",
+    "url": "https://www.htmlandcssbook.com/",
+    "course_id": "c34"
+  },
+  {
+    "id": "r49",
+    "title": "Data Engineering Intro",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/introduction-to-data-engineering",
+    "course_id": "c59"
+  },
+  {
+    "id": "r50",
+    "title": "Apache Spark Docs",
+    "type": "Article",
+    "url": "https://spark.apache.org/docs/latest/",
+    "course_id": "c50"
+  },
+  {
+    "id": "r51",
+    "title": "JavaScript Info",
+    "type": "Article",
+    "url": "https://javascript.info/",
+    "course_id": "c3"
+  },
+  {
+    "id": "r52",
+    "title": "HTML Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+    "course_id": "c24"
+  },
+  {
+    "id": "r53",
+    "title": "Corey Schafer Python",
+    "type": "Video",
+    "url": "https://www.youtube.com/@coreyms",
+    "course_id": "c20"
+  },
+  {
+    "id": "r54",
+    "title": "REST API Guide",
+    "type": "Article",
+    "url": "https://restfulapi.net/",
+    "course_id": "c15"
+  },
+  {
+    "id": "r55",
+    "title": "API Design Patterns",
+    "type": "Book",
+    "url": "https://www.manning.com/books/api-design-patterns",
+    "course_id": "c17"
+  },
+  {
+    "id": "r56",
+    "title": "Hands-On ML",
+    "type": "Book",
+    "url": "https://github.com/ageron/handson-ml2",
+    "course_id": "c21"
+  },
+  {
+    "id": "r57",
+    "title": "Andrew Ng ML",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/learn/machine-learning",
+    "course_id": "c21"
+  },
+  {
+    "id": "r58",
+    "title": "Designing Web APIs",
+    "type": "Book",
+    "url": "https://www.oreilly.com/library/view/designing-web-apis/9781492026914/",
+    "course_id": "c19"
+  },
+  {
+    "id": "r59",
+    "title": "CSS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+    "course_id": "c40"
+  },
+  {
+    "id": "r60",
+    "title": "REST API Tutorial Video",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+    "course_id": "c36"
+  },
+  {
+    "id": "r61",
+    "title": "React Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+    "course_id": "c41"
+  },
+  {
+    "id": "r62",
+    "title": "StatQuest ML",
+    "type": "Video",
+    "url": "https://www.youtube.com/@statquest",
+    "course_id": "c12"
+  },
+  {
+    "id": "r63",
+    "title": "React Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+    "course_id": "c5"
+  },
+  {
+    "id": "r64",
+    "title": "MDN HTML",
+    "type": "Article",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "course_id": "c45"
+  },
+  {
+    "id": "r65",
+    "title": "freeCodeCamp HTML",
+    "type": "MOOC",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+    "course_id": "c34"
+  },
+  {
+    "id": "r66",
+    "title": "Corey Schafer Python",
+    "type": "Video",
+    "url": "https://www.youtube.com/@coreyms",
+    "course_id": "c57"
+  },
+  {
+    "id": "r67",
+    "title": "ETL Concepts",
+    "type": "Article",
+    "url": "https://www.ibm.com/topics/etl",
+    "course_id": "c38"
+  },
+  {
+    "id": "r68",
+    "title": "ETL Concepts",
+    "type": "Article",
+    "url": "https://www.ibm.com/topics/etl",
+    "course_id": "c59"
+  },
+  {
+    "id": "r69",
+    "title": "Backend Coursera",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/",
+    "course_id": "c43"
+  },
+  {
+    "id": "r70",
+    "title": "Python for Everybody",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/specializations/python",
+    "course_id": "c27"
+  },
+  {
+    "id": "r71",
+    "title": "API Design Patterns",
+    "type": "Book",
+    "url": "https://www.manning.com/books/api-design-patterns",
+    "course_id": "c36"
+  },
+  {
+    "id": "r72",
+    "title": "Hands-On ML",
+    "type": "Book",
+    "url": "https://github.com/ageron/handson-ml2",
+    "course_id": "c12"
+  },
+  {
+    "id": "r73",
+    "title": "Hands-On ML",
+    "type": "Book",
+    "url": "https://github.com/ageron/handson-ml2",
+    "course_id": "c12"
+  },
+  {
+    "id": "r74",
+    "title": "Python Official Tutorial",
+    "type": "Article",
+    "url": "https://docs.python.org/3/tutorial/",
+    "course_id": "c26"
+  },
+  {
+    "id": "r75",
+    "title": "HTML Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+    "course_id": "c45"
+  },
+  {
+    "id": "r76",
+    "title": "NodeJS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+    "course_id": "c35"
+  },
+  {
+    "id": "r77",
+    "title": "React Docs",
+    "type": "Article",
+    "url": "https://react.dev/learn",
+    "course_id": "c41"
+  },
+  {
+    "id": "r78",
+    "title": "freeCodeCamp JS",
+    "type": "MOOC",
+    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "course_id": "c53"
+  },
+  {
+    "id": "r79",
+    "title": "Real Python",
+    "type": "Article",
+    "url": "https://realpython.com/",
+    "course_id": "c57"
+  },
+  {
+    "id": "r80",
+    "title": "Advanced Python (DataCamp)",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/intermediate-python",
+    "course_id": "c8"
+  },
+  {
+    "id": "r81",
+    "title": "freeCodeCamp CSS",
+    "type": "MOOC",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+    "course_id": "c40"
+  },
+  {
+    "id": "r82",
+    "title": "HTML Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+    "course_id": "c9"
+  },
+  {
+    "id": "r83",
+    "title": "Data Engineering YouTube",
+    "type": "Video",
+    "url": "https://www.youtube.com/@DataEngineering",
+    "course_id": "c59"
+  },
+  {
+    "id": "r84",
+    "title": "Apache Spark Docs",
+    "type": "Article",
+    "url": "https://spark.apache.org/docs/latest/",
+    "course_id": "c1"
+  },
+  {
+    "id": "r85",
+    "title": "StatQuest ML",
+    "type": "Video",
+    "url": "https://www.youtube.com/@statquest",
+    "course_id": "c16"
+  },
+  {
+    "id": "r86",
+    "title": "NodeJS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+    "course_id": "c35"
+  },
+  {
+    "id": "r87",
+    "title": "Designing Web APIs",
+    "type": "Book",
+    "url": "https://www.oreilly.com/library/view/designing-web-apis/9781492026914/",
+    "course_id": "c19"
+  },
+  {
+    "id": "r88",
+    "title": "HTML Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+    "course_id": "c24"
+  },
+  {
+    "id": "r89",
+    "title": "Python Official Tutorial",
+    "type": "Article",
+    "url": "https://docs.python.org/3/tutorial/",
+    "course_id": "c26"
+  },
+  {
+    "id": "r90",
+    "title": "JS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+    "course_id": "c53"
+  },
+  {
+    "id": "r91",
+    "title": "REST API Tutorial Video",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+    "course_id": "c15"
+  },
+  {
+    "id": "r92",
+    "title": "Effective Python",
+    "type": "Book",
+    "url": "https://effectivepython.com/",
+    "course_id": "c10"
+  },
+  {
+    "id": "r93",
+    "title": "React Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+    "course_id": "c5"
+  },
+  {
+    "id": "r94",
+    "title": "Designing Data-Intensive Apps",
+    "type": "Book",
+    "url": "https://dataintensive.net/",
+    "course_id": "c47"
+  },
+  {
+    "id": "r95",
+    "title": "Advanced Python (DataCamp)",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/intermediate-python",
+    "course_id": "c10"
+  },
+  {
+    "id": "r96",
+    "title": "NodeJS Docs",
+    "type": "Article",
+    "url": "https://nodejs.dev/en/learn/",
+    "course_id": "c19"
+  },
+  {
+    "id": "r97",
+    "title": "freeCodeCamp JS",
+    "type": "MOOC",
     "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
     "course_id": "c48"
   },
   {
-    "id": "r95",
-    "title": "Machine Learning Andrew Ng",
-    "type": "MOOC",
-    "url": "https://www.coursera.org/learn/machine-learning",
-    "course_id": "c56"
-  },
-  {
-    "id": "r96",
-    "title": "REST API Tutorial",
-    "type": "MOOC",
-    "url": "https://restfulapi.net/",
-    "course_id": "c60"
-  },
-  {
-    "id": "r97",
-    "title": "Big Data Specialization",
-    "type": "Article",
-    "url": "https://www.coursera.org/specializations/big-data",
-    "course_id": "c32"
-  },
-  {
     "id": "r98",
-    "title": "REST API Tutorial",
-    "type": "Article",
-    "url": "https://restfulapi.net/",
-    "course_id": "c19"
+    "title": "Corey Schafer Python",
+    "type": "Video",
+    "url": "https://www.youtube.com/@coreyms",
+    "course_id": "c8"
   },
   {
     "id": "r99",
-    "title": "Effective Python Book",
-    "type": "Video",
-    "url": "https://effectivepython.com/",
-    "course_id": "c54"
+    "title": "REST API Guide",
+    "type": "Article",
+    "url": "https://restfulapi.net/",
+    "course_id": "c17"
   },
   {
     "id": "r100",
-    "title": "freeCodeCamp HTML Course",
-    "type": "Video",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c35"
+    "title": "MDN CSS",
+    "type": "Article",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "course_id": "c2"
   },
   {
     "id": "r101",
-    "title": "MDN JavaScript Guide",
-    "type": "Book",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "course_id": "c37"
+    "title": "CSS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+    "course_id": "c42"
   },
   {
     "id": "r102",
-    "title": "NodeJS Learn",
+    "title": "NodeJS Docs",
     "type": "Article",
     "url": "https://nodejs.dev/en/learn/",
-    "course_id": "c39"
+    "course_id": "c43"
   },
   {
     "id": "r103",
-    "title": "freeCodeCamp Python Course",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
-    "course_id": "c6"
+    "title": "Designing Web APIs",
+    "type": "Book",
+    "url": "https://www.oreilly.com/library/view/designing-web-apis/9781492026914/",
+    "course_id": "c19"
   },
   {
     "id": "r104",
-    "title": "Big Data Specialization",
+    "title": "HTML & CSS Book",
     "type": "Book",
-    "url": "https://www.coursera.org/specializations/big-data",
-    "course_id": "c58"
+    "url": "https://www.htmlandcssbook.com/",
+    "course_id": "c9"
   },
   {
     "id": "r105",
-    "title": "React Official Docs",
+    "title": "Effective Python",
     "type": "Book",
-    "url": "https://react.dev/learn",
-    "course_id": "c52"
+    "url": "https://effectivepython.com/",
+    "course_id": "c20"
   },
   {
     "id": "r106",
-    "title": "freeCodeCamp HTML Course",
-    "type": "Video",
-    "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
-    "course_id": "c21"
+    "title": "Postman Course",
+    "type": "MOOC",
+    "url": "https://learning.postman.com/",
+    "course_id": "c36"
   },
   {
     "id": "r107",
-    "title": "LearnPython.org",
-    "type": "Book",
-    "url": "https://www.learnpython.org/",
+    "title": "MDN CSS",
+    "type": "Article",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
     "course_id": "c6"
   },
   {
     "id": "r108",
-    "title": "NodeJS Learn",
-    "type": "Book",
-    "url": "https://nodejs.dev/en/learn/",
-    "course_id": "c43"
+    "title": "CSS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+    "course_id": "c40"
   },
   {
     "id": "r109",
-    "title": "Postman API Fundamentals",
-    "type": "Video",
-    "url": "https://learning.postman.com/",
-    "course_id": "c19"
+    "title": "ETL Concepts",
+    "type": "Article",
+    "url": "https://www.ibm.com/topics/etl",
+    "course_id": "c38"
   },
   {
     "id": "r110",
-    "title": "MDN CSS Guide",
-    "type": "Article",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    "course_id": "c22"
+    "title": "Andrew Ng ML",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/learn/machine-learning",
+    "course_id": "c21"
   },
   {
     "id": "r111",
-    "title": "MDN HTML Guide",
+    "title": "Backend Coursera",
     "type": "MOOC",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    "course_id": "c35"
+    "url": "https://www.coursera.org/",
+    "course_id": "c43"
   },
   {
     "id": "r112",
-    "title": "JavaScript Info",
+    "title": "Hands-On ML",
     "type": "Book",
-    "url": "https://javascript.info/",
-    "course_id": "c40"
+    "url": "https://github.com/ageron/handson-ml2",
+    "course_id": "c12"
   },
   {
     "id": "r113",
-    "title": "Scrimba React Course",
+    "title": "freeCodeCamp JS",
     "type": "MOOC",
-    "url": "https://scrimba.com/learn/learnreact",
-    "course_id": "c31"
+    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "course_id": "c46"
   },
   {
     "id": "r114",
-    "title": "Apache Spark Documentation",
+    "title": "API Design Patterns",
     "type": "Book",
-    "url": "https://spark.apache.org/docs/latest/",
-    "course_id": "c58"
+    "url": "https://www.manning.com/books/api-design-patterns",
+    "course_id": "c15"
   },
   {
     "id": "r115",
-    "title": "Python Official Tutorial",
-    "type": "Video",
-    "url": "https://docs.python.org/3/tutorial/",
-    "course_id": "c49"
+    "title": "SQL for Data Science",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/learn/sql-for-data-science",
+    "course_id": "c23"
   },
   {
     "id": "r116",
-    "title": "freeCodeCamp JavaScript",
-    "type": "Book",
-    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
-    "course_id": "c40"
+    "title": "Advanced Python (DataCamp)",
+    "type": "MOOC",
+    "url": "https://www.datacamp.com/courses/intermediate-python",
+    "course_id": "c57"
   },
   {
     "id": "r117",
-    "title": "SQL Tutorial W3Schools",
-    "type": "Video",
+    "title": "W3Schools SQL",
+    "type": "Article",
     "url": "https://www.w3schools.com/sql/",
-    "course_id": "c7"
+    "course_id": "c60"
   },
   {
     "id": "r118",
-    "title": "Apache Spark Documentation",
-    "type": "Book",
-    "url": "https://spark.apache.org/docs/latest/",
-    "course_id": "c47"
+    "title": "JS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+    "course_id": "c46"
   },
   {
     "id": "r119",
-    "title": "JavaScript Info",
-    "type": "Article",
-    "url": "https://javascript.info/",
-    "course_id": "c48"
+    "title": "CSS Crash Course",
+    "type": "Video",
+    "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+    "course_id": "c2"
   },
   {
     "id": "r120",
-    "title": "freeCodeCamp JavaScript",
-    "type": "Article",
-    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "title": "Python for Everybody",
+    "type": "MOOC",
+    "url": "https://www.coursera.org/specializations/python",
     "course_id": "c37"
   }
 ]

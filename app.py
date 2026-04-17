@@ -1,206 +1,42 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
-import json
-import os
 
-# ─────────────────────────────────────────────
-# MODELS
-# ─────────────────────────────────────────────
+# models
+from models.user import User
 
-class Course:
-    def __init__(self, id, name, skills, difficulty, duration):
-        self.id = id
-        self.name = name
-        self.skills = skills
-        self.difficulty = difficulty
-        self.duration = duration
+# engine
+from engine.rule_engine import filter_courses
+from engine.scoring import score_course, GOAL_MAP
 
-class Resource:
-    def __init__(self, id, title, type, url, course_id):
-        self.id = id
-        self.title = title
-        self.type = type
-        self.url = url
-        self.course_id = course_id
+# utils
+from utils.loader import (
+    load_courses,
+    load_resources,
+    load_json,
+    load_skills
+)
 
-class User:
-    def __init__(self, goal, skills, level, time):
-        self.goal = goal
-        self.skills = skills
-        self.level = level
-        self.available_time = time
-    def has_skill(self, skill_id):
-        return skill_id in self.skills
+# =========================
+# LOAD DATA
+# =========================
 
-# ─────────────────────────────────────────────
-# DATA LOADER (inline JSON — no file I/O needed on deploy)
-# ─────────────────────────────────────────────
+COURSES = load_courses("data/courses.json")
+RESOURCES = load_resources("data/resources.json")
+SKILLS = load_skills("data/skills.json")
 
-SKILLS_DATA = [
-  {"id":"python_basic","name":"Python Basic","level":1},
-  {"id":"python_advanced","name":"Python Advanced","level":2},
-  {"id":"sql","name":"SQL","level":2},
-  {"id":"data_structures","name":"Data Structures","level":2},
-  {"id":"etl","name":"ETL","level":3},
-  {"id":"data_warehouse","name":"Data Warehouse","level":3},
-  {"id":"big_data","name":"Big Data","level":3},
-  {"id":"machine_learning","name":"Machine Learning","level":3},
-  {"id":"html","name":"HTML","level":1},
-  {"id":"css","name":"CSS","level":1},
-  {"id":"javascript","name":"JavaScript","level":2},
-  {"id":"react","name":"React","level":2},
-  {"id":"backend","name":"Backend","level":2},
-  {"id":"api","name":"API","level":2}
-]
-
-COURSES_DATA = [
-  {"id":"c1","name":"Advanced React","skills":["react"],"difficulty":2,"duration":22},
-  {"id":"c2","name":"Python Basic Bootcamp","skills":["python_basic"],"difficulty":1,"duration":19},
-  {"id":"c3","name":"CSS Fundamentals","skills":["css"],"difficulty":1,"duration":18},
-  {"id":"c4","name":"Python Advanced Practical Guide","skills":["python_advanced"],"difficulty":2,"duration":9},
-  {"id":"c5","name":"HTML Bootcamp","skills":["html"],"difficulty":1,"duration":21},
-  {"id":"c6","name":"Intro to Python Basic","skills":["python_basic"],"difficulty":1,"duration":13},
-  {"id":"c7","name":"Advanced SQL","skills":["sql"],"difficulty":2,"duration":12},
-  {"id":"c8","name":"React Fundamentals","skills":["react"],"difficulty":2,"duration":22},
-  {"id":"c9","name":"Python Basic for Beginners","skills":["python_basic"],"difficulty":1,"duration":14},
-  {"id":"c10","name":"Data Warehouse Fundamentals","skills":["data_warehouse"],"difficulty":3,"duration":16},
-  {"id":"c11","name":"ETL Fundamentals","skills":["etl"],"difficulty":3,"duration":14},
-  {"id":"c12","name":"React Practical Guide","skills":["react"],"difficulty":2,"duration":14},
-  {"id":"c13","name":"ETL Bootcamp","skills":["etl"],"difficulty":3,"duration":24},
-  {"id":"c14","name":"Big Data for Beginners","skills":["big_data"],"difficulty":3,"duration":9},
-  {"id":"c15","name":"Big Data Bootcamp","skills":["big_data"],"difficulty":3,"duration":9},
-  {"id":"c16","name":"Intro to Python Advanced","skills":["python_advanced"],"difficulty":2,"duration":12},
-  {"id":"c17","name":"API Bootcamp","skills":["api"],"difficulty":2,"duration":18},
-  {"id":"c18","name":"Data Structures Bootcamp","skills":["data_structures"],"difficulty":2,"duration":17},
-  {"id":"c19","name":"Intro to API","skills":["api"],"difficulty":2,"duration":12},
-  {"id":"c20","name":"Advanced Data Structures","skills":["data_structures"],"difficulty":2,"duration":19},
-  {"id":"c21","name":"Advanced HTML","skills":["html"],"difficulty":1,"duration":19},
-  {"id":"c22","name":"CSS Practical Guide","skills":["css"],"difficulty":1,"duration":18},
-  {"id":"c23","name":"Machine Learning for Beginners","skills":["machine_learning"],"difficulty":3,"duration":11},
-  {"id":"c24","name":"Advanced Data Warehouse","skills":["data_warehouse"],"difficulty":3,"duration":15},
-  {"id":"c25","name":"ETL Practical Guide","skills":["etl"],"difficulty":3,"duration":20},
-  {"id":"c26","name":"Data Warehouse Bootcamp","skills":["data_warehouse"],"difficulty":3,"duration":16},
-  {"id":"c27","name":"Intro to CSS","skills":["css"],"difficulty":1,"duration":18},
-  {"id":"c28","name":"SQL for Beginners","skills":["sql"],"difficulty":2,"duration":20},
-  {"id":"c29","name":"Intro to SQL","skills":["sql"],"difficulty":2,"duration":10},
-  {"id":"c30","name":"Backend Fundamentals","skills":["backend"],"difficulty":2,"duration":13},
-  {"id":"c31","name":"React for Beginners","skills":["react"],"difficulty":2,"duration":24},
-  {"id":"c32","name":"Big Data Fundamentals","skills":["big_data"],"difficulty":3,"duration":15},
-  {"id":"c33","name":"Data Structures Fundamentals","skills":["data_structures"],"difficulty":2,"duration":12},
-  {"id":"c34","name":"Advanced Python Advanced","skills":["python_advanced"],"difficulty":2,"duration":24},
-  {"id":"c35","name":"HTML Fundamentals","skills":["html"],"difficulty":1,"duration":20},
-  {"id":"c36","name":"Python Basic Fundamentals","skills":["python_basic"],"difficulty":1,"duration":23},
-  {"id":"c37","name":"JavaScript for Beginners","skills":["javascript"],"difficulty":2,"duration":25},
-  {"id":"c38","name":"Intro to ETL","skills":["etl"],"difficulty":3,"duration":20},
-  {"id":"c39","name":"Backend Practical Guide","skills":["backend"],"difficulty":2,"duration":23},
-  {"id":"c40","name":"Advanced JavaScript","skills":["javascript"],"difficulty":2,"duration":18},
-  {"id":"c41","name":"Python Advanced for Beginners","skills":["python_advanced"],"difficulty":2,"duration":23},
-  {"id":"c42","name":"Backend Bootcamp","skills":["backend"],"difficulty":2,"duration":20},
-  {"id":"c43","name":"Advanced Backend","skills":["backend"],"difficulty":2,"duration":11},
-  {"id":"c44","name":"ETL for Beginners","skills":["etl"],"difficulty":3,"duration":12},
-  {"id":"c45","name":"JavaScript Bootcamp","skills":["javascript"],"difficulty":2,"duration":15},
-  {"id":"c46","name":"Advanced Python Basic","skills":["python_basic"],"difficulty":1,"duration":17},
-  {"id":"c47","name":"Intro to Big Data","skills":["big_data"],"difficulty":3,"duration":18},
-  {"id":"c48","name":"Intro to JavaScript","skills":["javascript"],"difficulty":2,"duration":25},
-  {"id":"c49","name":"Python Basic Practical Guide","skills":["python_basic"],"difficulty":1,"duration":20},
-  {"id":"c50","name":"Data Structures for Beginners","skills":["data_structures"],"difficulty":2,"duration":13},
-  {"id":"c51","name":"Advanced API","skills":["api"],"difficulty":2,"duration":21},
-  {"id":"c52","name":"React Bootcamp","skills":["react"],"difficulty":2,"duration":18},
-  {"id":"c53","name":"HTML Practical Guide","skills":["html"],"difficulty":1,"duration":20},
-  {"id":"c54","name":"Python Advanced Bootcamp","skills":["python_advanced"],"difficulty":2,"duration":9},
-  {"id":"c55","name":"Machine Learning Practical Guide","skills":["machine_learning"],"difficulty":3,"duration":13},
-  {"id":"c56","name":"Advanced Machine Learning","skills":["machine_learning"],"difficulty":3,"duration":9},
-  {"id":"c57","name":"Machine Learning Bootcamp","skills":["machine_learning"],"difficulty":3,"duration":25},
-  {"id":"c58","name":"Big Data Practical Guide","skills":["big_data"],"difficulty":3,"duration":14},
-  {"id":"c59","name":"API for Beginners","skills":["api"],"difficulty":2,"duration":10},
-  {"id":"c60","name":"API Fundamentals","skills":["api"],"difficulty":2,"duration":12}
-]
-
-PREREQUISITES_DATA = []  # empty — add if needed
-
-RESOURCES_DATA = [
-  {"id":"r1","title":"CSS Tricks Guide","type":"MOOC","url":"https://css-tricks.com/","course_id":"c22"},
-  {"id":"r2","title":"Python for Everybody","type":"MOOC","url":"https://www.coursera.org/specializations/python","course_id":"c2"},
-  {"id":"r3","title":"React Official Docs","type":"Book","url":"https://react.dev/learn","course_id":"c1"},
-  {"id":"r4","title":"NodeJS Learn","type":"MOOC","url":"https://nodejs.dev/en/learn/","course_id":"c39"},
-  {"id":"r5","title":"SQLBolt Interactive Tutorial","type":"Book","url":"https://sqlbolt.com/","course_id":"c28"},
-  {"id":"r7","title":"Effective Python Book","type":"Book","url":"https://effectivepython.com/","course_id":"c54"},
-  {"id":"r8","title":"freeCodeCamp HTML Course","type":"Article","url":"https://www.freecodecamp.org/learn/responsive-web-design/","course_id":"c35"},
-  {"id":"r9","title":"Python Advanced Topics","type":"Video","url":"https://www.datacamp.com/courses/intermediate-python","course_id":"c34"},
-  {"id":"r10","title":"Data Engineering Foundations","type":"Book","url":"https://www.coursera.org/learn/data-engineering-foundations","course_id":"c44"},
-  {"id":"r11","title":"React freeCodeCamp","type":"Book","url":"https://www.freecodecamp.org/news/learn-react-course/","course_id":"c8"},
-  {"id":"r12","title":"freeCodeCamp HTML Course","type":"MOOC","url":"https://www.freecodecamp.org/learn/responsive-web-design/","course_id":"c5"},
-  {"id":"r13","title":"MDN JavaScript Guide","type":"Video","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript","course_id":"c37"},
-  {"id":"r14","title":"Apache Spark Documentation","type":"Book","url":"https://spark.apache.org/docs/latest/","course_id":"c47"},
-  {"id":"r15","title":"JavaScript Info","type":"Video","url":"https://javascript.info/","course_id":"c45"},
-  {"id":"r17","title":"Scrimba React Course","type":"Video","url":"https://scrimba.com/learn/learnreact","course_id":"c52"},
-  {"id":"r18","title":"Introduction to Data Engineering","type":"Article","url":"https://www.datacamp.com/courses/introduction-to-data-engineering","course_id":"c38"},
-  {"id":"r23","title":"Kaggle ML Course","type":"Video","url":"https://www.kaggle.com/learn/intro-to-machine-learning","course_id":"c23"},
-  {"id":"r25","title":"Google ML Crash Course","type":"Article","url":"https://developers.google.com/machine-learning/crash-course","course_id":"c57"},
-  {"id":"r26","title":"Postman API Fundamentals","type":"MOOC","url":"https://learning.postman.com/","course_id":"c59"},
-  {"id":"r30","title":"NodeJS Learn","type":"MOOC","url":"https://nodejs.dev/en/learn/","course_id":"c30"},
-  {"id":"r34","title":"Mode SQL Tutorial","type":"Book","url":"https://mode.com/sql-tutorial/","course_id":"c29"},
-  {"id":"r41","title":"freeCodeCamp Python Course","type":"Book","url":"https://www.freecodecamp.org/learn/scientific-computing-with-python/","course_id":"c9"},
-  {"id":"r43","title":"Postman API Fundamentals","type":"Video","url":"https://learning.postman.com/","course_id":"c17"},
-  {"id":"r84","title":"FastAPI Tutorial","type":"Video","url":"https://fastapi.tiangolo.com/tutorial/","course_id":"c39"},
-  {"id":"r95","title":"Machine Learning Andrew Ng","type":"MOOC","url":"https://www.coursera.org/learn/machine-learning","course_id":"c56"},
-  {"id":"r96","title":"REST API Tutorial","type":"MOOC","url":"https://restfulapi.net/","course_id":"c60"},
-]
-
-# ─────────────────────────────────────────────
-# BUSINESS LOGIC
-# ─────────────────────────────────────────────
-
-GOAL_MAP = {
-    "Data Engineer": ["sql", "etl", "data_warehouse"],
-    "ML Engineer": ["python_advanced", "machine_learning"],
-    "Data Mining Engineer": ["python_basic", "sql", "machine_learning"],
-    "Frontend Developer": ["html", "css", "javascript", "react"],
-    "Backend Developer": ["python_basic", "sql", "api", "backend"],
-    "Fullstack Developer": ["html", "css", "javascript", "python_basic", "sql", "api"],
-    "Web Developer": ["html", "css", "javascript"]
+PREREQUISITES = {
+    item["course_id"]: item.get("requires", [])
+    for item in load_json("data/prerequisites.json")
 }
 
-def load_courses():
-    return [Course(**c) for c in COURSES_DATA]
+# =========================
+# FASTAPI
+# =========================
 
-def load_resources():
-    return [Resource(**r) for r in RESOURCES_DATA]
-
-def filter_courses(courses, user):
-    filtered = []
-    prerequisites = {item["course_id"]: item.get("requires", []) for item in PREREQUISITES_DATA}
-    for course in courses:
-        if course.difficulty > user.level + 1:
-            continue
-        required = prerequisites.get(course.id, [])
-        if any(r not in user.skills for r in required):
-            continue
-        filtered.append(course)
-    return filtered
-
-def score_course(course, user):
-    score = 0
-    if any(skill in GOAL_MAP[user.goal] for skill in course.skills):
-        score += 3
-    if course.difficulty <= user.level + 1:
-        score += 2
-    if course.duration <= user.available_time:
-        score += 1
-    return score
-
-# ─────────────────────────────────────────────
-# FASTAPI APP
-# ─────────────────────────────────────────────
-
-app = FastAPI(
-    title="Course Recommender API",
-    description="Hệ thống gợi ý khóa học dựa trên mục tiêu nghề nghiệp, kỹ năng và thời gian của bạn.",
-    version="1.0.0"
-)
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
@@ -209,7 +45,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ─── Pydantic schemas ───
+# =========================
+# SCHEMAS
+# =========================
 
 class RecommendRequest(BaseModel):
     goal: str
@@ -217,11 +55,13 @@ class RecommendRequest(BaseModel):
     level: int
     available_time: int
 
+
 class ResourceOut(BaseModel):
     id: str
     title: str
     type: str
     url: str
+
 
 class CourseOut(BaseModel):
     id: str
@@ -232,59 +72,59 @@ class CourseOut(BaseModel):
     score: int
     resources: List[ResourceOut]
 
+
 class RecommendResponse(BaseModel):
     goal: str
     total_filtered: int
     recommendations: List[CourseOut]
 
-class SkillOut(BaseModel):
-    id: str
-    name: str
-    level: int
 
-# ─── Endpoints ───
+# =========================
+# ROUTES
+# =========================
 
-@app.get("/", response_class=HTMLResponse, include_in_schema=False)
+@app.get("/", response_class=HTMLResponse)
 async def root():
     return HTMLResponse(content=HTML_PAGE)
 
-@app.get("/skills", response_model=List[SkillOut], tags=["Data"])
-async def get_skills():
-    """Trả về danh sách tất cả kỹ năng có trong hệ thống."""
-    return SKILLS_DATA
 
-@app.get("/goals", tags=["Data"])
-async def get_goals():
-    """Trả về danh sách mục tiêu nghề nghiệp."""
+@app.get("/skills")
+def get_skills():
+    return SKILLS
+
+
+@app.get("/goals")
+def get_goals():
     return {"goals": list(GOAL_MAP.keys())}
 
-@app.post("/recommend", response_model=RecommendResponse, tags=["Recommend"])
-async def recommend(req: RecommendRequest):
-    """
-    Gợi ý top 5 khóa học phù hợp nhất dựa trên:
-    - **goal**: Mục tiêu nghề nghiệp
-    - **skills**: Danh sách kỹ năng hiện có (dùng id từ /skills)
-    - **level**: Trình độ hiện tại (1=Beginner, 2=Intermediate, 3=Advanced)
-    - **available_time**: Thời gian rảnh (giờ/tuần)
-    """
+
+@app.post("/recommend", response_model=RecommendResponse)
+def recommend(req: RecommendRequest):
+
     if req.goal not in GOAL_MAP:
-        from fastapi import HTTPException
-        raise HTTPException(status_code=400, detail=f"Goal không hợp lệ. Chọn một trong: {list(GOAL_MAP.keys())}")
+        raise HTTPException(status_code=400, detail="Goal không hợp lệ")
+
     if req.level not in [1, 2, 3]:
-        from fastapi import HTTPException
-        raise HTTPException(status_code=400, detail="Level phải là 1, 2 hoặc 3")
+        raise HTTPException(status_code=400, detail="Level phải là 1-3")
 
-    user = User(goal=req.goal, skills=req.skills, level=req.level, time=req.available_time)
-    courses = load_courses()
-    resources = load_resources()
+    user = User(
+        goal=req.goal,
+        skills=req.skills,
+        level=req.level,
+        time=req.available_time
+    )
 
-    filtered = filter_courses(courses, user)
+    # ===== ENGINE =====
+    filtered = filter_courses(COURSES, user, PREREQUISITES)
     scored = [(c, score_course(c, user)) for c in filtered]
     ranked = sorted(scored, key=lambda x: x[1], reverse=True)[:5]
 
+    # ===== RESPONSE =====
     result = []
+
     for course, score in ranked:
-        related = [r for r in resources if r.course_id == course.id][:3]
+        related = [r for r in RESOURCES if r.course_id == course.id][:3]
+
         result.append(CourseOut(
             id=course.id,
             name=course.name,
@@ -292,7 +132,14 @@ async def recommend(req: RecommendRequest):
             difficulty=course.difficulty,
             duration=course.duration,
             score=score,
-            resources=[ResourceOut(id=r.id, title=r.title, type=r.type, url=r.url) for r in related]
+            resources=[
+                ResourceOut(
+                    id=r.id,
+                    title=r.title,
+                    type=r.type,
+                    url=r.url
+                ) for r in related
+            ]
         ))
 
     return RecommendResponse(
@@ -300,7 +147,6 @@ async def recommend(req: RecommendRequest):
         total_filtered=len(filtered),
         recommendations=result
     )
-
 # ─────────────────────────────────────────────
 # FRONTEND HTML (served at /)
 # ─────────────────────────────────────────────

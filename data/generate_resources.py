@@ -3,7 +3,7 @@ import random
 import os
 
 # =========================
-# RESOURCE TYPES
+# RESOURCE TYPES (không cần nữa nhưng giữ lại nếu bạn muốn dùng sau)
 # =========================
 RESOURCE_TYPES = ["MOOC", "Book", "Article", "Video"]
 
@@ -11,75 +11,77 @@ RESOURCE_TYPES = ["MOOC", "Book", "Article", "Video"]
 # SKILL → REAL LINKS
 # =========================
 RESOURCE_LINKS = {
-
     "python_basic": [
-        ("Python Official Tutorial", "https://docs.python.org/3/tutorial/"),
-        ("Python for Everybody", "https://www.coursera.org/specializations/python"),
-        ("freeCodeCamp Python Course", "https://www.freecodecamp.org/learn/scientific-computing-with-python/"),
-        ("LearnPython.org", "https://www.learnpython.org/")
+        ("Python Official Tutorial", "https://docs.python.org/3/tutorial/", "Article"),
+        ("Python for Everybody", "https://www.coursera.org/specializations/python", "MOOC"),
+        ("Automate the Boring Stuff", "https://automatetheboringstuff.com/", "Book"),
+        ("freeCodeCamp Python Course", "https://www.freecodecamp.org/learn/scientific-computing-with-python/", "Video")
     ],
-
     "python_advanced": [
-        ("Advanced Python Programming", "https://realpython.com/"),
-        ("Python Advanced Topics", "https://www.datacamp.com/courses/intermediate-python"),
-        ("Effective Python Book", "https://effectivepython.com/")
+        ("Real Python", "https://realpython.com/", "Article"),
+        ("Effective Python", "https://effectivepython.com/", "Book"),
+        ("Advanced Python (DataCamp)", "https://www.datacamp.com/courses/intermediate-python", "MOOC"),
+        ("Corey Schafer Python", "https://www.youtube.com/@coreyms", "Video")
     ],
-
     "sql": [
-        ("SQL for Data Science", "https://www.coursera.org/learn/sql-for-data-science"),
-        ("SQL Tutorial W3Schools", "https://www.w3schools.com/sql/"),
-        ("Mode SQL Tutorial", "https://mode.com/sql-tutorial/"),
-        ("SQLBolt Interactive Tutorial", "https://sqlbolt.com/")
+        ("W3Schools SQL", "https://www.w3schools.com/sql/", "Article"),
+        ("SQL for Data Science", "https://www.coursera.org/learn/sql-for-data-science", "MOOC"),
+        ("SQL Cookbook", "https://www.oreilly.com/library/view/sql-cookbook/0596009763/", "Book"),
+        ("freeCodeCamp SQL", "https://www.youtube.com/watch?v=HXV3zeQKqGY", "Video")
     ],
-
     "machine_learning": [
-        ("Machine Learning Andrew Ng", "https://www.coursera.org/learn/machine-learning"),
-        ("Google ML Crash Course", "https://developers.google.com/machine-learning/crash-course"),
-        ("Kaggle ML Course", "https://www.kaggle.com/learn/intro-to-machine-learning")
+        ("Google ML Crash Course", "https://developers.google.com/machine-learning/crash-course", "Article"),
+        ("Andrew Ng ML", "https://www.coursera.org/learn/machine-learning", "MOOC"),
+        ("Hands-On ML", "https://github.com/ageron/handson-ml2", "Book"),
+        ("StatQuest ML", "https://www.youtube.com/@statquest", "Video")
     ],
-
     "etl": [
-        ("Introduction to Data Engineering", "https://www.datacamp.com/courses/introduction-to-data-engineering"),
-        ("Data Engineering Foundations", "https://www.coursera.org/learn/data-engineering-foundations")
+        ("Data Engineering Intro", "https://www.datacamp.com/courses/introduction-to-data-engineering", "MOOC"),
+        ("ETL Concepts", "https://www.ibm.com/topics/etl", "Article"),
+        ("Designing Data-Intensive Apps", "https://dataintensive.net/", "Book"),
+        ("Data Engineering YouTube", "https://www.youtube.com/@DataEngineering", "Video")
     ],
-
     "big_data": [
-        ("Big Data Specialization", "https://www.coursera.org/specializations/big-data"),
-        ("Apache Spark Documentation", "https://spark.apache.org/docs/latest/")
+        ("Apache Spark Docs", "https://spark.apache.org/docs/latest/", "Article"),
+        ("Big Data Coursera", "https://www.coursera.org/specializations/big-data", "MOOC"),
+        ("Spark: The Definitive Guide", "https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/", "Book"),
+        ("Spark Tutorial", "https://www.youtube.com/watch?v=_C8kWso4ne4", "Video")
     ],
-
     "html": [
-        ("HTML Tutorial", "https://www.w3schools.com/html/"),
-        ("MDN HTML Guide", "https://developer.mozilla.org/en-US/docs/Web/HTML"),
-        ("freeCodeCamp HTML Course", "https://www.freecodecamp.org/learn/responsive-web-design/")
+        ("MDN HTML", "https://developer.mozilla.org/en-US/docs/Web/HTML", "Article"),
+        ("freeCodeCamp HTML", "https://www.freecodecamp.org/learn/responsive-web-design/", "MOOC"),
+        ("HTML & CSS Book", "https://www.htmlandcssbook.com/", "Book"),
+        ("HTML Crash Course", "https://www.youtube.com/watch?v=UB1O30fR-EE", "Video")
     ],
-
     "css": [
-        ("CSS Tutorial", "https://www.w3schools.com/css/"),
-        ("MDN CSS Guide", "https://developer.mozilla.org/en-US/docs/Web/CSS"),
-        ("CSS Tricks Guide", "https://css-tricks.com/")
+        ("MDN CSS", "https://developer.mozilla.org/en-US/docs/Web/CSS", "Article"),
+        ("freeCodeCamp CSS", "https://www.freecodecamp.org/learn/responsive-web-design/", "MOOC"),
+        ("CSS Secrets", "https://csssecrets.io/", "Book"),
+        ("CSS Crash Course", "https://www.youtube.com/watch?v=yfoY53QXEnI", "Video")
     ],
-
     "javascript": [
-        ("JavaScript Info", "https://javascript.info/"),
-        ("MDN JavaScript Guide", "https://developer.mozilla.org/en-US/docs/Web/JavaScript"),
-        ("freeCodeCamp JavaScript", "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/")
+        ("JavaScript Info", "https://javascript.info/", "Article"),
+        ("freeCodeCamp JS", "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/", "MOOC"),
+        ("You Don’t Know JS", "https://github.com/getify/You-Dont-Know-JS", "Book"),
+        ("JS Crash Course", "https://www.youtube.com/watch?v=hdI2bqOjy3c", "Video")
     ],
-
     "react": [
-        ("React Official Docs", "https://react.dev/learn"),
-        ("React freeCodeCamp", "https://www.freecodecamp.org/news/learn-react-course/"),
-        ("Scrimba React Course", "https://scrimba.com/learn/learnreact")
+        ("React Docs", "https://react.dev/learn", "Article"),
+        ("Scrimba React", "https://scrimba.com/learn/learnreact", "MOOC"),
+        ("Fullstack React Book", "https://www.fullstackreact.com/", "Book"),
+        ("React Course", "https://www.youtube.com/watch?v=bMknfKXIFA8", "Video")
     ],
-
     "backend": [
-        ("NodeJS Learn", "https://nodejs.dev/en/learn/"),
-        ("FastAPI Tutorial", "https://fastapi.tiangolo.com/tutorial/")
+        ("NodeJS Docs", "https://nodejs.dev/en/learn/", "Article"),
+        ("Backend Coursera", "https://www.coursera.org/", "MOOC"),
+        ("Designing Web APIs", "https://www.oreilly.com/library/view/designing-web-apis/9781492026914/", "Book"),
+        ("NodeJS Crash Course", "https://www.youtube.com/watch?v=fBNz5xF-Kx4", "Video")
     ],
-
     "api": [
-        ("REST API Tutorial", "https://restfulapi.net/"),
-        ("Postman API Fundamentals", "https://learning.postman.com/")
+        ("REST API Guide", "https://restfulapi.net/", "Article"),
+        ("Postman Course", "https://learning.postman.com/", "MOOC"),
+        ("API Design Patterns", "https://www.manning.com/books/api-design-patterns", "Book"),
+        ("REST API Tutorial Video", "https://www.youtube.com/watch?v=Q-BpqyOT3a8", "Video")
     ]
 }
 
@@ -106,12 +108,13 @@ def generate_resources(courses, n=120):
         if skill not in RESOURCE_LINKS:
             continue
 
-        title, url = random.choice(RESOURCE_LINKS[skill])
+        # FIX LỖI Ở ĐÂY
+        title, url, r_type = random.choice(RESOURCE_LINKS[skill])
 
         resource = {
             "id": f"r{resource_id}",
             "title": title,
-            "type": random.choice(RESOURCE_TYPES),
+            "type": r_type,  # dùng type đúng từ data
             "url": url,
             "course_id": course["id"]
         }

@@ -2,7 +2,13 @@
   {
     "course_id": "c1",
     "requires": [
-      "javascript"
+      "python_basic"
+    ]
+  },
+  {
+    "course_id": "c2",
+    "requires": [
+      "html"
     ]
   },
   {
@@ -12,39 +18,45 @@
     ]
   },
   {
-    "course_id": "c4",
+    "course_id": "c5",
     "requires": [
-      "python_basic"
+      "javascript"
+    ]
+  },
+  {
+    "course_id": "c6",
+    "requires": [
+      "html"
     ]
   },
   {
     "course_id": "c7",
     "requires": [
-      "python_basic"
+      "backend"
     ]
   },
   {
     "course_id": "c8",
     "requires": [
-      "javascript"
+      "python_basic"
     ]
   },
   {
     "course_id": "c10",
     "requires": [
-      "sql"
+      "python_basic"
     ]
   },
   {
     "course_id": "c11",
     "requires": [
-      "sql"
+      "python_basic"
     ]
   },
   {
     "course_id": "c12",
     "requires": [
-      "javascript"
+      "python_advanced"
     ]
   },
   {
@@ -62,13 +74,13 @@
   {
     "course_id": "c15",
     "requires": [
-      "python_basic"
+      "backend"
     ]
   },
   {
     "course_id": "c16",
     "requires": [
-      "python_basic"
+      "python_advanced"
     ]
   },
   {
@@ -78,45 +90,45 @@
     ]
   },
   {
+    "course_id": "c18",
+    "requires": [
+      "sql"
+    ]
+  },
+  {
     "course_id": "c19",
     "requires": [
-      "backend"
+      "python_basic"
     ]
   },
   {
-    "course_id": "c22",
+    "course_id": "c20",
     "requires": [
-      "html"
+      "python_basic"
     ]
   },
   {
-    "course_id": "c23",
+    "course_id": "c21",
     "requires": [
       "python_advanced"
     ]
   },
   {
-    "course_id": "c24",
+    "course_id": "c22",
     "requires": [
       "sql"
+    ]
+  },
+  {
+    "course_id": "c23",
+    "requires": [
+      "python_basic"
     ]
   },
   {
     "course_id": "c25",
     "requires": [
       "sql"
-    ]
-  },
-  {
-    "course_id": "c26",
-    "requires": [
-      "sql"
-    ]
-  },
-  {
-    "course_id": "c27",
-    "requires": [
-      "html"
     ]
   },
   {
@@ -128,37 +140,37 @@
   {
     "course_id": "c29",
     "requires": [
-      "python_basic"
-    ]
-  },
-  {
-    "course_id": "c30",
-    "requires": [
-      "python_basic"
+      "sql"
     ]
   },
   {
     "course_id": "c31",
     "requires": [
-      "javascript"
+      "python_basic"
     ]
   },
   {
     "course_id": "c32",
     "requires": [
-      "python_basic"
+      "sql"
     ]
   },
   {
-    "course_id": "c34",
+    "course_id": "c33",
+    "requires": [
+      "javascript"
+    ]
+  },
+  {
+    "course_id": "c35",
     "requires": [
       "python_basic"
     ]
   },
   {
-    "course_id": "c37",
+    "course_id": "c36",
     "requires": [
-      "html"
+      "backend"
     ]
   },
   {
@@ -170,7 +182,7 @@
   {
     "course_id": "c39",
     "requires": [
-      "python_basic"
+      "backend"
     ]
   },
   {
@@ -182,13 +194,13 @@
   {
     "course_id": "c41",
     "requires": [
-      "python_basic"
+      "javascript"
     ]
   },
   {
     "course_id": "c42",
     "requires": [
-      "python_basic"
+      "html"
     ]
   },
   {
@@ -198,13 +210,7 @@
     ]
   },
   {
-    "course_id": "c44",
-    "requires": [
-      "sql"
-    ]
-  },
-  {
-    "course_id": "c45",
+    "course_id": "c46",
     "requires": [
       "html"
     ]
@@ -212,7 +218,7 @@
   {
     "course_id": "c47",
     "requires": [
-      "python_basic"
+      "sql"
     ]
   },
   {
@@ -222,15 +228,21 @@
     ]
   },
   {
-    "course_id": "c51",
+    "course_id": "c50",
     "requires": [
-      "backend"
+      "python_basic"
     ]
   },
   {
-    "course_id": "c52",
+    "course_id": "c51",
     "requires": [
-      "javascript"
+      "python_advanced"
+    ]
+  },
+  {
+    "course_id": "c53",
+    "requires": [
+      "html"
     ]
   },
   {
@@ -242,19 +254,13 @@
   {
     "course_id": "c55",
     "requires": [
-      "python_advanced"
-    ]
-  },
-  {
-    "course_id": "c56",
-    "requires": [
-      "python_advanced"
+      "html"
     ]
   },
   {
     "course_id": "c57",
     "requires": [
-      "python_advanced"
+      "python_basic"
     ]
   },
   {
@@ -266,13 +272,13 @@
   {
     "course_id": "c59",
     "requires": [
-      "backend"
+      "sql"
     ]
   },
   {
     "course_id": "c60",
     "requires": [
-      "backend"
+      "python_basic"
     ]
   }
 ]
